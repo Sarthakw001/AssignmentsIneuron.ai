@@ -1,0 +1,29 @@
+1. What’s Box Model in CSS ? 
+Ans. The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. According to the CSS box model, the web browser supplies each element as a square prism
+
+2. How do you define a media query in CSS?
+Ans. A media query consists of a media type and can contain one or more expressions, which resolve to either true or false. The result of the query is true if the specified media type matches the type of device the document is being displayed on and all expressions in the media query are true.
+
+3. What is VW/VH ?
+Ans. VH stands for “viewport height”, which is the viewable screen's height. 100VH would represent 100% of the viewport's height, or the full height of the screen. And of course, VW stands for “viewport width”, which is the viewable screen's width.
+
+4. Whats difference between Inline, Inline Block and block ?
+Ans. inline -> the container will acquire the height and width of the content
+     inline-block -> we are allowed to set the width and height of the container
+     blocl -> occupies the whole width of the screen and height of the content
+
+5.How is Border-box different from Content Box?
+Ans. Border-box = content + padding + borders
+     Content - box = content width + content height;
+
+6. What’s z-index and How does it Function?
+Ans. Z Index ( z-index ) is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index.Z index only works on positioned elements
+
+7. What’s Grid & Flex and difference between them?
+Ans. Grid is made for a two-dimensional layout while Flexbox is for one. This means Flexbox can work on either row or columns at a time, but Grids can work on both. 
+
+8. Difference between absolute and relative and sticky and fixed position explain with example.
+Ans. Relative - the element is positioned relative to its normal position. 
+     Absolute - the element is positioned absolutely to its first positioned parent. 
+     Fixed - the element is positioned related to the browser window. 
+     Sticky - the element is positioned based on the user's scroll position.
