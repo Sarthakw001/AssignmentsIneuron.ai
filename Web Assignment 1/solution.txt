@@ -1,0 +1,37 @@
+1. <!DOCTYPE html> is it a tag of html? If not, what is it and why do we use it?
+Ans. It is not tag, it only tells the browser of what type of document it should expect.
+
+2. Explain Semantic tags in html? And why do we need it?
+Ans. Semantic tags are those tags that convey some meaning to the browser, like <nav>, <header>, <footer>.
+     It is basically used in search engine optimization of the website and also makes the code more readible.
+
+3.  Differentiate between HTML Tags and Elements?
+Ans. HTML tags consist of only opening tags and closing tags while Elements consist of both tags along with some content.
+
+4.  Build Your Resume using HTML only
+Ans. html file attached in folder
+
+5.  Write HTML code so that it looks like the below image
+Ans. html file attached in folder
+
+6. What are some of the advantages of HTML5 over its previous versions?
+Ans. - It is mobile-friendly and easy to use.
+     - Web pages contain a wide range of colors, shades, and different font types.
+     - HTML5 is compatible with all web browsers.
+     - It supports client-side databases.
+     - HTML5 has improved performance and security, as it enables storage across numerous browsers.
+
+7. Create a simple Music player using html only
+Ans. html file attached in folder
+
+8. What is the difference between <figure> tag and <img> tag?
+Ans. The figure tag is used to semantically organize the content of images, videos, audios or even charts or
+     tables, block of codes in the HTML document
+     The image tag is used to add an image to an HTML page. <img> tag can only insert image
+
+9. What’s the difference between html tag and attribute and give example of some global attributes?
+Ans. An HTML tag is a way of representing an HTML element in the program. On the other hand, an HTML attribute
+     describes the characteristics of an HTML element.
+
+10. Write Html code so that it looks like the below image 
+Ans. html file attached in folder
