@@ -1,0 +1,90 @@
+1. Explain Hoisting in JavaScript
+Ans. Hoisting is JavaScript's default behavior of moving declarations to the top, only variable declared with var and normal function support hoisting while let and const does not support and only declarations are hoisted and not initialiazation.
+
+2. Explain Temporal Dead Zone?
+Ans. A temporal dead zone (TDZ) is the block where a variable is inaccessible until the moment the computer initializes it with a value.
+
+A block can be defined as a pair of braces ({...}) used to accumulate multiple statements.
+Initialization occurs when one assigns an initial value to a variable.
+
+Suppose a user attempts to access a variable before its complete initialization. In such a scenario, JavaScript will subject a ReferenceError.
+
+3.  Difference between var & let?
+Ans. The difference between let and var is in the scope of the variables they create:
+
+    Variables declared by let are only available inside the block where they’re defined.
+    Variables declared by var are available throughout the function in which they’re declared.
+
+4.  What are the major features introduced in ECMAScript 6?
+Ans. let and const Keywords
+     Arrow Functions
+     Multi-line Strings
+     Default Parameters
+     Template Literals
+     Destructuring Assignment
+     Enhanced Object Literals
+     Promises
+     Classes
+     Modules
+
+5. What is the difference between let and const ?
+Ans. Differnce based on 3 situations -> 
+     Scope of variables
+     Redeclaration and reassignment
+     Hoisting
+
+    var  -> has a global scope and can be used anywhere
+         -> can be reassigned with other value;
+         -> are hoisted and initialized with value undefined
+    let  -> has global,local and block Scope
+         -> can be reassigned
+         -> are hoisted but initialized with any value and thus gives error cannot access before initialiazation
+  const  ->  has scope similar to let
+         -> cannot be Redeclared and reassigned
+         -> and are hoisted similar to let Keyword
+
+6. What is template literals in ES6 and how do you use them?
+Ans. It is new  feature in ECMAScript 6 -> which allows multiline string using backticks and helps to perform string interpolation using '${var_name}'
+
+7. What’s difference between map & forEach?
+Ans. The forEach() method does not gives the new Array and only returns undefined while map() methods creates a new array although both are basically used for traversing and performing certain operations on them.
+
+8. How can you destructure objects and arrays in ES6?
+Ans. Destructuring is an efficient way to extract multiple values from data that is stored in arrays or objects. When destructuring an array, we use their positions (or index) in an assignment.
+
+var arr = ["Hello", "World"]  
+  
+// destructuring assignment  
+var [first, second] = arr;  
+  
+console.log(first); // Hello  
+console.log(second); // World  
+
+
+9. How can you define default parameter values in ES6 functions?
+Ans. Function parameters with default values are initialized with default values if they contain no value or are undefined. JavaScript function parameters are defined as undefined by default. However, it may be useful to set a different default value.
+
+function multiply(a, b = 2) {
+	return a * b;
+}
+
+let num1 = multiply(5);
+console.log(num1);
+let num2 = multiply(5, 8);
+console.log(num2);
+
+
+10. What is the purpose of the spread operator (...) in ES6?
+Ans. The spread operator helps the iterable objects to expand into individual elements. Iterable objects are those on which we can use a loop, for example, Array, Map, Set, etc. In other words, the spread operator allows us to copy all elements from the existing array or object into another array or object.
+
+const cars1 = ["AUDI", "BMW", "TATA", "MERCEDES"];
+// Copied elements from cars1 to cars2 here
+const cars2 = [...cars1];
+
+// Copied elements from cars1 to cars3 here
+// and also add some new elements in cars3
+const cars3 = [...cars1, "NISSAN", "TOYOTA"];
+
+console.log(cars1);
+console.log(cars2);
+console.log(cars3);
