@@ -1,0 +1,70 @@
+Q.1 What’s difference between Synchronous and Asynchronous?
+Ans. The differences between asynchronous and synchronous include:
+
+     Async is multi-thread, which means operations or programs can run in parallel. Sync is single-thread, so only one operation or program will run at a time.
+
+     Async is non-blocking, which means it will send multiple requests to a server. Sync is blocking — it will only send the server one request at a time and will wait for that request to be answered by the server.
+
+     Async increases throughput because multiple operations can run at the same time. Sync is slower and more methodical.
+
+
+Q.2 What are Web Apis ?
+Ans. API stands for Application Programming Interface.
+
+     A Web API is an application programming interface for the Web.
+
+     A Browser API can extend the functionality of a web browser.
+
+     A Server API can extend the functionality of a web server.
+
+Q.3 Explain SetTimeOut and setInterval ?
+Ans. The setTimeout() method is used to call a function after a certain period of time. The setInterval() Javascript method is used to call a function repeatedly at a specified interval of time. setTimeout() is cancelled by clearTimeout() method, and setInterval() is cancelled by clearInterval() method.
+
+Q.4 how can you handle Async code in JavaScript ?
+Ans. In JavaScript, there are two common ways to work with asynchronous operations: then/catch method chaining and async/await. Both methods can be used to handle promises, which are objects that represent the eventual completion (or failure) of an asynchronous operation.
+
+then/catch method chaining is a more traditional way to handle asynchronous operations, while async/await is a newer syntax that provides a more concise and easier-to-read alternative.
+
+Q.5 What are Callbacks &  Callback Hell ?
+Ans. Callbacks are basically methods that are passed as the parameters to the other function. Functions that take other functions as a parameter are known as Higher Order functions. Nesting of callbacks can lead to an unreadable and not easy to manageable codebase commonly known as callback hell in Node.
+
+Q.6 What are Promises & Explain Some Three Methods of Promise
+Ans. In JavaScript, a promise is a good way to handle asynchronous operations. It is used to find out if the asynchronous operation is successfully completed or not.
+
+    A promise may have one of three states.
+
+    Pending
+    Fulfilled
+    Rejected
+    A promise starts in a pending state. That means the process is not complete. If the operation is successful, the process ends in a fulfilled state. And, if an error occurs, the process ends in a rejected state.
+
+    For example, when you request data from the server by using a promise, it will be in a pending state. When the data arrives successfully, it will be in a fulfilled state. If an error occurs, then it will be in a rejected state.
+
+Q.7 What’s async & await Keyword in JavaScript
+Ans. The async function declaration creates a binding of a new async function to a given name. The await keyword is permitted within the function body, enabling asynchronous, promise-based behavior to be written in a cleaner style and avoiding the need to explicitly configure promise chains.
+
+The purpose of async/await is to simplify the syntax necessary to consume promise-based APIs. The behavior of async/await is similar to combining generators and promises.
+
+Q.8 Explain Purpose of Try and Catch Block & Why do we need it?
+Ans. A try block is the block of code (contains a set of statements) in which exceptions can occur; it's used to enclose the code that might throw an exception. The try block is always followed by a catch block, which handles the exception that occurs in the associated try block.
+
+Q.9 Explain fetch
+Ans. The fetch() method in JavaScript is used to request data from a server. The request can be of any type of API that returns the data in JSON or XML. The fetch() method requires one parameter, the URL to request, and returns a promise.
+
+Q.10 How do you define an asynchronous function in JavaScript using async/await?
+Ans. function resolveAfter2Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+  console.log('calling');
+  const result = await resolveAfter2Seconds();
+  console.log(result);
+  // Expected output: "resolved"
+}
+
+asyncCall();
